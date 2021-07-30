@@ -1,0 +1,28 @@
+#register-content {
+  border: 3px solid #efccff;
+  width: 400px;
+  height: auto;
+  position: absolute; 
+  margin: auto;
+  background: white;
+  font-size: 15px;
+}
+
+.register-title {
+  display: inline-flex;
+}
+
+#username, #password, .footer-register {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.backToLogin {
+ margin-right: 1em;
+ float: right;
+}
+
+#registerButton {
+  margin-left: 1em;
+}

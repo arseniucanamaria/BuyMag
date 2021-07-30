@@ -1,0 +1,42 @@
+#login-content {
+	border: 3px solid #ccf2ff;
+	width: 400px;
+  height: auto;
+  position: absolute; 
+  margin: auto;
+  background: white;
+  font-size: 15px;
+}
+
+.login-title {
+  display: inline-flex;
+}
+
+#username, #password {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.register {
+  margin-right: 1em;
+  float: right;
+}
+
+.footer-login {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.loginButton {
+  background-color: #1c87c9;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 1em;
+}
