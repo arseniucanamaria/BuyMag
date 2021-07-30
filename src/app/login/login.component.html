@@ -1,0 +1,25 @@
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<div id="login-content" class="w3-display-middle">
+    <form>
+      <div class="login-title">
+        <mat-icon>person</mat-icon>
+        <h2>Login</h2>
+      </div><br>
+      <label for="username">USERNAME</label><br>
+      <input type="text" id="username" placeholder="username" min="3" required><br>
+      <label for="password">PASSWORD</label><br>
+      <input type="password" id="password" placeholder="password" min="3" required><br>
+      <div class="remember-me-content">
+        <div>
+            <input id="remember-me" type="checkbox">Remember me
+        </div>
+      </div>
+      <div class="footer-login">
+        <a routerLink="/home-page" class="loginButton">Login</a>
+        <a routerLink="/register" class="register">Register</a>
+      </div>
+    </form>
+</div>
