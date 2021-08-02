@@ -3,23 +3,24 @@
 </head>
 
 <div id="login-content" class="w3-display-middle">
-    <form>
+    <div class="login=form">
       <div class="login-title">
         <mat-icon>person</mat-icon>
         <h2>Login</h2>
       </div><br>
       <label for="username">USERNAME</label><br>
-      <input type="text" id="username" placeholder="username" min="3" required><br>
+      <input type="text" id="username" [(ngModel)]="username" placeholder="username" required><br>
       <label for="password">PASSWORD</label><br>
-      <input type="password" id="password" placeholder="password" min="3" required><br>
+      <input type="password" id="password" [(ngModel)]="password" placeholder="password" required><br>
       <div class="remember-me-content">
         <div>
             <input id="remember-me" type="checkbox">Remember me
         </div>
       </div>
       <div class="footer-login">
-        <a routerLink="/home-page" class="loginButton">Login</a>
+        <!-- <a routerLink="/home-page" class="loginButton">Login</a> -->
+        <button (click)="login()" class="loginButton">Login</button>
         <a routerLink="/register" class="register">Register</a>
       </div>
-    </form>
+    </div>
 </div>

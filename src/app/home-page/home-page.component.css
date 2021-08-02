@@ -31,4 +31,8 @@
     color: white;
     justify-content: space-evenly;
 }
+
+.labels {
+    font-weight: bold; 
+}
  
