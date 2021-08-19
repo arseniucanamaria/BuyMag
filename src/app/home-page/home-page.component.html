@@ -1,3 +1,7 @@
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
 <div class="header-of-shop">
     <div class="header-content">
       <div class="user-options">
@@ -7,6 +11,57 @@
       </div>
       <div class="date-time">
         <b class="date">{{ dateToday | date:'dd/MM/yyyy HH:mm' }}</b>
+      </div>
+    </div>
+</div>
+
+<div class="products-content w3-display-middle">
+    <div class="products-result">
+      <div *ngFor="let Food of foods">
+        <div class="product-options">
+          <label for="name" class="labels">Name: </label>
+            {{Food.name}}
+        </div>
+        <div class="product-options">
+          <label for="type" class="labels">Type: </label>
+          {{Food.type}}
+        </div>
+        <div class="product-options">
+          <label for="description" class="labels">Description: </label>
+          {{Food.description}}
+        </div>
+        <div class="product-options">
+          <label for="alergies" class="labels">Alergies: </label>
+          {{Food.alergies}}
+        </div>
+        <div class="product-options">
+          <label for="taste" class="labels">Taste: </label>
+          {{Food.taste}}
+        </div>
+        <div class="product-options">
+          <label for="season" class="labels">Season: </label>
+          {{Food.season}}
+        </div>
+        <div class="product-options">
+          <label for="weightInKg" class="labels">Weight in Kg: </label>
+          {{Food.weightInKg}}
+        </div>
+        <div class="product-options">
+          <label for="url" class="labels">Url: </label>
+          {{Food.url}}
+        </div>
+        <div class="product-options">
+          <label for="stock" class="labels">Stock: </label>
+          {{Food.stock}}
+        </div>
+        <div class="product-options">
+          <label for="price" class="labels">Price: </label>
+          {{Food.price}}
+        </div>
+        <div class="product-options">
+          <label for="currency" class="labels">Currency: </label>
+          {{Food.currency}}
+        </div><br>
       </div>
     </div>
 </div>
